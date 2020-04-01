@@ -11,18 +11,26 @@
     },
     {
       "index": 2,
-      "name": "Location"
+      "name": "FateRuleEx",
+      "converter": {
+        "type": "link",
+        "target": "FateRuleEx"
+      }
     },
     {
       "index": 3,
-      "name": "ClassJobLevel"
+      "name": "Location"
     },
     {
       "index": 4,
-      "name": "ClassJobLevel{Max}"
+      "name": "ClassJobLevel"
     },
     {
       "index": 5,
+      "name": "ClassJobLevel{Max}"
+    },
+    {
+      "index": 6,
       "name": "EventItem",
       "converter": {
         "type": "link",
@@ -30,7 +38,7 @@
       }
     },
     {
-      "index": 6,
+      "index": 7,
       "type": "repeat",
       "count": 3,
       "definition": {
@@ -38,28 +46,28 @@
       }
     },
     {
-      "index": 9,
+      "index": 10,
       "name": "Icon{Objective}",
       "converter": {
         "type": "icon"
       }
     },
     {
-      "index": 10,
+      "index": 11,
       "name": "Icon{Map}",
       "converter": {
         "type": "icon"
       }
     },
     {
-      "index": 11,
+      "index": 12,
       "name": "IconInactive{Map}",
       "converter": {
         "type": "icon"
       }
     },
     {
-      "index": 12,
+      "index": 13,
       "name": "Music",
       "converter": {
         "type": "link",
@@ -67,11 +75,11 @@
       }
     },
     {
-      "index": 13,
+      "index": 14,
       "name": "LGBGuardNPCLocation"
     },
     {
-      "index": 14,
+      "index": 15,
       "name": "ScreenImage{Accept}",
       "converter": {
         "type": "link",
@@ -79,7 +87,7 @@
       }
     },
     {
-      "index": 15,
+      "index": 16,
       "name": "ScreenImage{Complete}",
       "converter": {
         "type": "link",
@@ -87,7 +95,7 @@
       }
     },
     {
-      "index": 16,
+      "index": 17,
       "name": "ScreenImage{Failed}",
       "converter": {
         "type": "link",
@@ -95,27 +103,47 @@
       }
     },
     {
-      "index": 17,
+      "index": 18,
       "name": "HasWorldMapIcon"
     },
     {
-      "index": 18,
+      "index": 19,
       "name": "IsQuest"
     },
     {
-      "index": 26,
-      "name": "Name"
+      "index": 20,
+      "name": "SpecialFate"
     },
     {
-      "index": 27,
+      "index": 21,
+      "name": "GivenStatus",
+      "converter": {
+        "type": "link",
+        "target": "Status"
+      }
+    },
+    {
+      "index": 23,
+      "name": "AdventEvent"
+    },
+    {
+      "index": 24,
+      "name": "MoonFaireEvent"
+    },
+    {
+      "index": 26,
+      "name": "FATEChain"
+    },
+    {
+      "index": 30,
       "name": "Description"
     },
     {
-      "index": 28,
+      "index": 31,
       "name": "Objective"
     },
     {
-      "index": 29,
+      "index": 32,
       "type": "repeat",
       "count": 3,
       "definition": {
@@ -123,11 +151,38 @@
       }
     },
     {
-      "index": 32,
+      "index": 35,
       "name": "ArrayIndex",
       "converter": {
         "type": "link",
         "target": "ArrayEventHandler"
+      }
+    },
+    {
+      "index": 37,
+      "name": "ReqEventItem",
+      "converter": {
+        "type": "link",
+        "target": "EventItem"
+      }
+    },
+    {
+      "index": 38,
+      "name": "TurnInEventItem",
+      "converter": {
+        "type": "link",
+        "target": "EventItem"
+      }
+    },
+    {
+      "index": 39,
+      "type": "repeat",
+      "count": 8,
+      "definition": {
+        "name": "ObjectiveIcon",
+        "converter": {
+          "type": "icon"
+        }
       }
     }
   ]
