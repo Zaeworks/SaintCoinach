@@ -8,6 +8,10 @@ GodBert初始化sqpack时默认读英文包, 国服版本不含英文所以直�
 
 > Support by 萌芽池-河城菏取, 我会随缘同步上游分支.
 
+除此之外此分支还做了以下变动:
+
+- 允许导出原始数据, 需要先切换显示原始数据(对着表头右键摁一下)
+
 ## Functionality 
 ### Fully implemented
 
