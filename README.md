@@ -2,6 +2,16 @@
 
 A .NET library written in C# for extracting game assets and reading game assets from **Final Fantasy XIV**, now with support for including the Libra Eorzea database.
 
+## 关于此分支
+
+GodBert初始化sqpack时默认读英文包, 国服版本不含英文所以直接报错; 此分支修正了这个问题, 可以**同时兼容国服和国际服**.
+
+> Support by 萌芽池-河城菏取, 我会随缘同步上游分支.
+
+除此之外此分支还做了以下变动:
+
+- 允许导出原始数据, 需要先切换显示原始数据(对着表头右键摁一下)
+
 ## Functionality 
 ### Fully implemented
 

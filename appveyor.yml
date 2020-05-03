@@ -1,4 +1,4 @@
-version: 'Build {build}'
+version: 'CN_Build {build}'
 
 skip_tags: true
 
@@ -52,4 +52,4 @@ deploy:
   description: ""
   artifact: Godbert,SaintCoinach.Cmd
   auth_token:
-    secure: P5xOt894Gg8zZBmUblkV3QFS1nXmJtW1D9VcZl4E2vEMTknLi+FinTrsJfH/N1gE
+    secure: 3QnfQcuoeg7M8i/BeY1uwQeI0LYImM5c9SRr6Q736lLy+k2bVqRM0OB0oLw4VgYC

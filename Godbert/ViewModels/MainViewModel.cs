@@ -73,6 +73,13 @@ namespace Godbert.ViewModels {
             realm.Packs.GetPack(new SaintCoinach.IO.PackIdentifier("exd", SaintCoinach.IO.PackIdentifier.DefaultExpansion, 0)).KeepInMemory = true;
 
             Realm = realm;
+
+            var header = Realm.GameData.GetSheet<Item>().Header;
+            if(!header.AvailableLanguages.Contains(realm.GameData.ActiveLanguage) && header.AvailableLanguagesCount > 0) 
+            {
+                realm.GameData.ActiveLanguage = header.AvailableLanguages.First();
+            }
+
             EngineHelper = new EngineHelper();
             Equipment = new EquipmentViewModel(this);
             Furniture = new FurnitureViewModel(this);

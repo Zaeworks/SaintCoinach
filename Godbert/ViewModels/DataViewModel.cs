@@ -149,6 +149,9 @@ namespace Godbert.ViewModels {
                     foreach (var col in colIndices) {
                         var v = row[col];
 
+                        if (v is SaintCoinach.Xiv.XivRow xivRow && Controls.ColumnFactory.ForceRaw)
+                            v = xivRow.Key;
+
                         if (v == null)
                             s.Write(",");
                         else if (v is IDictionary<int, object>)
